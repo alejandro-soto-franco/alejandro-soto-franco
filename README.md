@@ -34,7 +34,7 @@ Open-source libraries for differential geometry, simulation, and scientific comp
 
 ## Research
 
-Interested in the 3D Navier-Stokes smooth solution existence and uniqueness problem. Active research in defect-mediated hydrodynamics of coupled active-lyotropic nematic systems (with the [Beller Lab](https://danielbeller.com) at JHU).
+Interested in the 3D Navier-Stokes smooth solution existence and uniqueness problem. Active research in defect-mediated chaotic mixing hydrodynamics of coupled active-lyotropic nematic systems. Previously affiliated with the [Beller Lab](https://pages.jh.edu/dbeller3/home.html) and [Mao Lab](https://maogroup.jhu.edu/) at JHU.
 
 ---
 
