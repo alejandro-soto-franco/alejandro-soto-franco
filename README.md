@@ -8,7 +8,6 @@ I build high-performance numerical software: quantitative trading engines, compu
 
 [![Website](https://img.shields.io/badge/sotofranco.dev-000?style=flat-square&logo=vercel&logoColor=white)](https://sotofranco.dev)
 
----
 
 ## Quantitative Finance
 
