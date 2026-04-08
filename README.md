@@ -8,7 +8,7 @@ I build high-performance numerical software: quantitative trading engines, compu
 
 [![Website](https://img.shields.io/badge/sotofranco.dev-000?style=flat-square&logo=vercel&logoColor=white)](https://sotofranco.dev)
 
----
+
 
 ## Quantitative Finance
 
@@ -37,7 +37,7 @@ Open-source libraries for differential geometry, simulation, and scientific comp
 
 Interested in the 3D Navier-Stokes smooth solution existence and uniqueness problem. Active research in defect-mediated hydrodynamics of coupled active-lyotropic nematic systems (with the [Beller Lab](https://danielbeller.com) at JHU).
 
----
+
 
 <p align="center">
   <img src="https://github-readme-stats-kohl-nine-83.vercel.app/api/top-langs/?username=alejandro-soto-franco&layout=compact&theme=github_dark&hide_border=true&bg_color=00000000&langs_count=10&hide=html,jupyter%20notebook,mdx,tex,makefile,css,plpgsql" />
