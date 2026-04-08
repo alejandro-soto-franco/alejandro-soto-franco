@@ -17,7 +17,7 @@ Private repositories under [Holonomy Securities](https://holonomysecurities.com)
 | Project | Description |
 |---------|-------------|
 | **Polybius** | Binary options engine for prediction markets. Non-stationary SDE models, Kelly sizing, CLOB execution. Polymarket live, Kalshi planned. 16-crate workspace. |
-| **Malliavin** | Regime-conditional equity options engine. Directional spreads + vol selling on QQQ, driven by Polybius regime signals. Polygon + CBOE data, Deribit/IBKR venue integrations. |
+| **Malliavin** | Regime-conditional equity options engine. Directional spreads + vol selling on QQQ. Polygon + CBOE data, Deribit/IBKR venue integrations. |
 | **Bismut** | Volatility surface curvature signals. SSVI fitting, Riemannian curvature extraction, walk-forward backtesting with butterfly and straddle strategies. |
 | **Hsu** | Manifold-valued covariance research engine. Realized covariance matrices as points on SPD(N) with affine-invariant metrics, tangent-space MLE calibration. Built on `cartan` and `pathwise`. |
 
