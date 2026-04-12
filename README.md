@@ -10,6 +10,17 @@ I build high-performance numerical software: quantitative trading engines, compu
 
 
 
+## Computational Mathematics
+
+Open-source libraries for differential geometry, simulation, and scientific computing.
+
+| Project | Description |
+|---------|-------------|
+| [**cartan**](https://github.com/alejandro-soto-franco/cartan) | Riemannian and Lie-group optimization in Rust. 6 crates on [crates.io](https://crates.io/crates/cartan), Python bindings on [PyPI](https://pypi.org/project/cartan/). Benchmarks and docs at [cartan.sotofranco.dev](https://cartan.sotofranco.dev). |
+| [**volterra**](https://github.com/alejandro-soto-franco/volterra) | Covariant active nematics solver for arbitrary dimensions. Discrete exterior calculus on simplicial meshes. Rust crates on [crates.io](https://crates.io/crates/volterra), Python bindings on [PyPI](https://pypi.org/project/volterra-nematic/). |
+| [**pathwise**](https://github.com/alejandro-soto-franco/pathwise) | Simulation and calibration of non-Markovian stochastic differential equations. Geodesic integrators on manifold state spaces. Rust crates on [crates.io](https://crates.io/crates/pathwise-core), Python bindings on [PyPI](https://pypi.org/project/pathwise-sde/). |
+| [**vonkarman**](https://github.com/alejandro-soto-franco/vonkarman) | Pseudospectral DNS solver for the 3D incompressible Navier-Stokes equations. ETD-RK4 time integration, cuFFT GPU backend via runtime-loaded CUDA, checkpoint/restart, spectral convergence verified. 5 crates on [crates.io](https://crates.io/crates/vonkarman-core). Cross-validated against JHU's [hit3d](https://github.com/cpraveen/hit3d) (Fortran) on Taylor-Green Re=1600. |
+
 ## Quantitative Finance
 
 Private repositories under [Holonomy Securities](https://holonomysecurities.com).
@@ -22,16 +33,10 @@ Private repositories under [Holonomy Securities](https://holonomysecurities.com)
 | **Bismut** | Volatility surface curvature signals. SSVI fitting, Riemannian curvature extraction, walk-forward backtesting with butterfly and straddle strategies. |
 | **Hsu** | Manifold-valued covariance research engine. Realized covariance matrices as points on SPD(N) with affine-invariant metrics, tangent-space MLE calibration. Built on `cartan` and `pathwise`. |
 
-## Computational Mathematics
-
-Open-source libraries for differential geometry, simulation, and scientific computing.
+## Bioinformatics
 
 | Project | Description |
 |---------|-------------|
-| [**cartan**](https://github.com/alejandro-soto-franco/cartan) | Riemannian and Lie-group optimization in Rust. 6 crates on [crates.io](https://crates.io/crates/cartan), Python bindings on [PyPI](https://pypi.org/project/cartan/). Benchmarks and docs at [cartan.sotofranco.dev](https://cartan.sotofranco.dev). |
-| [**volterra**](https://github.com/alejandro-soto-franco/volterra) | Covariant active nematics solver for arbitrary dimensions. Discrete exterior calculus on simplicial meshes. Rust crates on [crates.io](https://crates.io/crates/volterra), Python bindings on [PyPI](https://pypi.org/project/volterra-nematic/). |
-| [**pathwise**](https://github.com/alejandro-soto-franco/pathwise) | Simulation and calibration of non-Markovian stochastic differential equations. Geodesic integrators on manifold state spaces. Rust crates on [crates.io](https://crates.io/crates/pathwise-core), Python bindings on [PyPI](https://pypi.org/project/pathwise-sde/). |
-| [**vonkarman**](https://github.com/alejandro-soto-franco/vonkarman) | 3D Navier-Stokes DNS solver in Rust. Pseudospectral ETD-RK4 with cuFFT GPU backend. 5 crates on [crates.io](https://crates.io/crates/vonkarman-core). Cross-validated against hit3d (Fortran). |
 | [**inferCNAsc**](https://github.com/alejandro-soto-franco/inferCNAsc) | Copy number alteration inference from single-cell RNA-seq. Rust HPC backend + Python interface. On [crates.io](https://crates.io/crates/infercnasc) and [PyPI](https://pypi.org/project/infercnasc/). |
 
 ## Research
