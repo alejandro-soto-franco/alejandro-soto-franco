@@ -10,6 +10,15 @@ I build high-performance numerical software: quantitative trading engines, compu
 
 
 
+## Research
+
+Active research programmes developed along a three-track architecture (Lean 4 + LaTeX + SymPy / Cadabra2) with chapter-level synchronisation between formal, narrative, and symbolic verification.
+
+| Project | Description |
+|---------|-------------|
+| [**3d-navier-stokes**](https://github.com/alejandro-soto-franco/navier-stokes) | A geometric-analytic approach to the Clay Millennium regularity problem for the 3D incompressible Navier-Stokes equations via the Biot-Savart connection on the divergence-free bundle. Six-chapter monograph in LaTeX; Lean 4 formalisation (21 theorems proved against Mathlib, ~2,400 lines of user code) with sorry-counts named by blocker; SymPy + Cadabra2 symbolic cross-checks on every coordinate and abstract-index identity. Chapters 3-4 develop the connection as Levi-Civita of the $L^2$ metric on $\mathrm{SDiff}(\mathbb{T}^3)$, prove the CKN bridge theorem in full, and derive a curvature-measure bound $\mu_R = |R|^{6/5}$ finite at Leray-Hopf regularity. |
+| [**mars-lnp**](https://github.com/alejandro-soto-franco/mars-lnp) | Defect-mediated hydrodynamic transfer of orientational order in coupled active-lyotropic nematic systems. Magnetically actuated nematic rotor suspension plus lyotropic lipid phase; simulations run on `volterra` with defect detection via `cartan` holonomy. Every paper equation traced to a SymPy (symbolic / dimensional) + NumPy (numerical sanity) + Lean 4 / Mathlib (topological claims) check. |
+
 ## Computational Mathematics
 
 Open-source libraries for differential geometry, simulation, and scientific computing.
@@ -40,10 +49,6 @@ Private repositories under [Holonomy Securities](https://holonomysecurities.com)
 | **Malliavin** | Regime-conditional equity options engine. Directional spreads + vol selling on QQQ. Polygon + CBOE data, Deribit/IBKR venue integrations. |
 | **Bismut** | Volatility surface curvature signals. SSVI fitting, Riemannian curvature extraction, walk-forward backtesting with butterfly and straddle strategies. |
 | **Hsu** | Manifold-valued covariance research engine. Realized covariance matrices as points on SPD(N) with affine-invariant metrics, tangent-space MLE calibration. Built on `cartan` and `pathwise`. |
-
-## Research
-
-Interested in the 3D Navier-Stokes smooth solution existence and uniqueness problem. Current work involving the Biot-Savart connection is available [here](https://github.com/alejandro-soto-franco/navier-stokes). Active research in defect-mediated hydrodynamics of coupled active-lyotropic nematic systems.
 
 
 
