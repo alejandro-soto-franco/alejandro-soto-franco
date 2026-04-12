@@ -22,6 +22,13 @@ Open-source libraries for differential geometry, simulation, and scientific comp
 | [**vonkarman**](https://github.com/alejandro-soto-franco/vonkarman) | Pseudospectral DNS solver for the 3D incompressible Navier-Stokes equations. ETD-RK4 time integration, cuFFT GPU backend via runtime-loaded CUDA, checkpoint/restart, spectral convergence verified. 5 crates on [crates.io](https://crates.io/crates/vonkarman-core). Cross-validated against JHU's [hit3d](https://github.com/cpraveen/hit3d) (Fortran) on Taylor-Green Re=1600. |
 | [**elworthy**](https://github.com/alejandro-soto-franco/elworthy) | JIT compiler that specialises Bismut-Elworthy-Li formulas into SIMD kernels for unbiased Monte Carlo Greeks on non-stationary SDEs. Symbolic AST, Cranelift lowering (scalar + F64X2), multi-dimensional Heston driver, pathwise and Malliavin-weight parameter Greeks (machine-checked with SymPy). 6 crates on [crates.io](https://crates.io/crates/elworthy). ~22x over the tree-walking interpreter on GBM paths. |
 
+## Bioinformatics
+
+| Project | Description |
+|---------|-------------|
+| [**inferCNAsc**](https://github.com/alejandro-soto-franco/inferCNAsc) | Copy number alteration inference from single-cell RNA-seq. Rust HPC backend + Python interface. On [crates.io](https://crates.io/crates/infercnasc) and [PyPI](https://pypi.org/project/infercnasc/). |
+| [**mermin**](https://github.com/alejandro-soto-franco/mermin) | k-atic alignment analysis of fluorescence microscopy. Minkowski tensor shape descriptors, multiscale structure tensor, topological defect detection via `cartan-geo` SO(3) holonomy, persistent homology, and Landau-de Gennes parameter fitting on cell monolayers. 7 crates on [crates.io](https://crates.io/crates/mermin), Python bindings on [PyPI](https://pypi.org/project/mermin/). |
+
 ## Quantitative Finance
 
 Private repositories under [Holonomy Securities](https://holonomysecurities.com).
@@ -33,13 +40,6 @@ Private repositories under [Holonomy Securities](https://holonomysecurities.com)
 | **Malliavin** | Regime-conditional equity options engine. Directional spreads + vol selling on QQQ. Polygon + CBOE data, Deribit/IBKR venue integrations. |
 | **Bismut** | Volatility surface curvature signals. SSVI fitting, Riemannian curvature extraction, walk-forward backtesting with butterfly and straddle strategies. |
 | **Hsu** | Manifold-valued covariance research engine. Realized covariance matrices as points on SPD(N) with affine-invariant metrics, tangent-space MLE calibration. Built on `cartan` and `pathwise`. |
-
-## Bioinformatics
-
-| Project | Description |
-|---------|-------------|
-| [**inferCNAsc**](https://github.com/alejandro-soto-franco/inferCNAsc) | Copy number alteration inference from single-cell RNA-seq. Rust HPC backend + Python interface. On [crates.io](https://crates.io/crates/infercnasc) and [PyPI](https://pypi.org/project/infercnasc/). |
-| [**mermin**](https://github.com/alejandro-soto-franco/mermin) | k-atic alignment analysis of fluorescence microscopy. Minkowski tensor shape descriptors, multiscale structure tensor, topological defect detection via `cartan-geo` SO(3) holonomy, persistent homology, and Landau-de Gennes parameter fitting on cell monolayers. 7 crates on [crates.io](https://crates.io/crates/mermin), Python bindings on [PyPI](https://pypi.org/project/mermin/). |
 
 ## Research
 
