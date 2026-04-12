@@ -16,6 +16,7 @@ Private repositories under [Holonomy Securities](https://holonomysecurities.com)
 
 | Project | Description |
 |---------|-------------|
+| **Colosseum** | Multi-asset quantitative backtesting platform. WASM strategy sandbox, CLOB-native data, configurable fill models, full audit trail. Rust engine + axum API + Next.js frontend. |
 | **Polybius** | Binary options engine for prediction markets. Non-stationary SDE models, Kelly sizing, CLOB execution. Polymarket live, Kalshi planned. 16-crate workspace. |
 | **Malliavin** | Regime-conditional equity options engine. Directional spreads + vol selling on QQQ. Polygon + CBOE data, Deribit/IBKR venue integrations. |
 | **Bismut** | Volatility surface curvature signals. SSVI fitting, Riemannian curvature extraction, walk-forward backtesting with butterfly and straddle strategies. |
@@ -30,7 +31,7 @@ Open-source libraries for differential geometry, simulation, and scientific comp
 | [**cartan**](https://github.com/alejandro-soto-franco/cartan) | Riemannian and Lie-group optimization in Rust. 6 crates on [crates.io](https://crates.io/crates/cartan), Python bindings on [PyPI](https://pypi.org/project/cartan/). Benchmarks and docs at [cartan.sotofranco.dev](https://cartan.sotofranco.dev). |
 | [**volterra**](https://github.com/alejandro-soto-franco/volterra) | Covariant active nematics solver for arbitrary dimensions. Discrete exterior calculus on simplicial meshes. |
 | [**pathwise**](https://github.com/alejandro-soto-franco/pathwise) | Simulation and calibration of non-Markovian stochastic differential equations. Geodesic integrators on manifold state spaces. |
-| [**vonkarman**](https://github.com/alejandro-soto-franco/vonkarman) | 3D Navier-Stokes solver in Rust. |
+| [**vonkarman**](https://github.com/alejandro-soto-franco/vonkarman) | 3D Navier-Stokes DNS solver in Rust. Pseudospectral ETD-RK4 with cuFFT GPU backend. 5 crates on [crates.io](https://crates.io/crates/vonkarman-core). Cross-validated against hit3d (Fortran). |
 | [**inferCNAsc**](https://github.com/alejandro-soto-franco/inferCNAsc) | Copy number alteration inference from single-cell RNA-seq. Rust HPC backend + Python interface. |
 
 ## Research
