@@ -36,7 +36,7 @@ Open-source libraries for differential geometry, simulation, and scientific comp
 
 ## Research
 
-Interested in the 3D Navier-Stokes smooth solution existence and uniqueness problem. Current work involving the Biot-Savart connection is available [here](https://github.com/alejandro-soto-franco/navier-stokes). Active research in defect-mediated hydrodynamics of coupled active-lyotropic nematic systems (with the [Beller Lab](https://danielbeller.com) at JHU).
+Interested in the 3D Navier-Stokes smooth solution existence and uniqueness problem. Current work involving the Biot-Savart connection is available [here](https://github.com/alejandro-soto-franco/navier-stokes). Active research in defect-mediated hydrodynamics of coupled active-lyotropic nematic systems.
 
 
 
