@@ -1,6 +1,6 @@
 # Alejandro Soto Franco
 
-Rust + Math. Founding Principal at [Holonomy Securities](https://holonomysecurities.com), where a three-person team ships systematic trading engines (Polybius, Malliavin, Bismut, Hsu) on a shared platform substrate (Colosseum, just launched). Polybius, our Polymarket-native binary options engine, is up roughly 81% since going live.
+Rust + Math. Founding Principal at [Holonomy Securities](https://holonomysecurities.com), where a three-person team ships systematic trading engines (Polybius, Malliavin, Bismut, Hsu) on a shared platform substrate ([Colosseum](https://colosseum.holonomysecurities.com), just launched). Polybius, our Polymarket-native binary options engine, is up roughly 81% since going live.
 
 BS/MSE Biomedical Engineering, Johns Hopkins University. Previously a trading strategies developer at Anti Capital (New York), building multi-exchange async execution systems in Rust.
 
@@ -50,7 +50,7 @@ Private repositories under [Holonomy Securities](https://holonomysecurities.com)
 
 | Project | Description |
 |---------|-------------|
-| **Colosseum** | Multi-asset quantitative backtesting platform. WASM strategy sandbox, CLOB-native data, configurable fill models, full audit trail. Rust engine + axum API + Next.js frontend. |
+| [**Colosseum**](https://colosseum.holonomysecurities.com) | Multi-asset quantitative backtesting platform. WASM strategy sandbox, CLOB-native data, configurable fill models, full audit trail. Rust engine + axum API + Next.js frontend. |
 | **Polybius** | Binary options engine for prediction markets. Non-stationary SDE models, Kelly sizing, CLOB execution. Polymarket live, Kalshi planned. 16-crate workspace. |
 | **Malliavin** | Regime-conditional equity options engine. Directional spreads + vol selling on QQQ. Polygon + CBOE data, Deribit/IBKR venue integrations. |
 | **Bismut** | Volatility surface curvature signals. SSVI fitting, Riemannian curvature extraction, walk-forward backtesting with butterfly and straddle strategies. |
