@@ -38,6 +38,12 @@ Open-source libraries for differential geometry, simulation, and scientific comp
 | [**inferCNAsc**](https://github.com/alejandro-soto-franco/inferCNAsc) | Copy number alteration inference from single-cell RNA-seq. Rust HPC backend + Python interface. On [crates.io](https://crates.io/crates/infercnasc) and [PyPI](https://pypi.org/project/infercnasc/). |
 | [**mermin**](https://github.com/alejandro-soto-franco/mermin) | k-atic alignment analysis of fluorescence microscopy. Minkowski tensor shape descriptors, multiscale structure tensor, topological defect detection via `cartan-geo` SO(3) holonomy, persistent homology, and Landau-de Gennes parameter fitting on cell monolayers. 7 crates on [crates.io](https://crates.io/crates/mermin), Python bindings on [PyPI](https://pypi.org/project/mermin/). |
 
+## Upstream contributions
+
+| Date | Project | Description | Reference |
+|------|---------|-------------|-----------|
+| 14 Apr 2026 | [Mathlib4](https://github.com/leanprover-community/mathlib4) | `HasCompactMulSupport` closure under product operations: submonoid, List, Multiset, and Finset variants, with `@[to_additive]`. | [#38022](https://github.com/leanprover-community/mathlib4/pull/38022) · [`2ff8885`](https://github.com/leanprover-community/mathlib4/commit/2ff88851d5) |
+
 ## Quantitative Finance
 
 Private repositories under [Holonomy Securities](https://holonomysecurities.com).
