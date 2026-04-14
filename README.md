@@ -1,10 +1,10 @@
 # Alejandro Soto Franco
 
-Rust + Math. Founding Principal at [Holonomy Securities](https://holonomysecurities.com).
+Rust + Math. Founding Principal at [Holonomy Securities](https://holonomysecurities.com), where a three-person team ships systematic trading engines (Polybius, Malliavin, Bismut, Hsu) on a shared platform substrate (Colosseum, just launched). Polybius, our Polymarket-native binary options engine, is up roughly 81% since going live.
 
 BS/MSE Biomedical Engineering, Johns Hopkins University. Previously a trading strategies developer at Anti Capital (New York), building multi-exchange async execution systems in Rust.
 
-I build high-performance numerical software: quantitative trading engines, computational geometry libraries, and PDE solvers. Everything ships in Rust by default.
+In parallel I maintain open-source Rust libraries for geometric computing and stochastic analysis (cartan, pathwise, volterra, elworthy), and collaborate with the University of Pittsburgh School of Medicine on applying mermin's topological-defect pipeline to human vaginal fibroblast microscopy.
 
 [![Website](https://img.shields.io/badge/sotofranco.dev-000?style=flat-square&logo=vercel&logoColor=white)](https://sotofranco.dev)
 
