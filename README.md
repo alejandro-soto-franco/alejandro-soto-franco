@@ -1,66 +1,85 @@
 # Alejandro Soto Franco
 
-Rust + Math. Founding Principal at [Holonomy Securities](https://holonomysecurities.com), where a three-person team ships systematic trading engines (Polybius, Malliavin, Bismut, Hsu) on a shared platform substrate ([Colosseum](https://colosseum.holonomysecurities.com), just launched). Polybius, our Polymarket-native binary options engine, is up roughly 81% since going live.
+I implement mathematics. Differential geometry, stochastic analysis and PDE theory, as Rust libraries you can run, Lean developments you can check, and the GPU compilers underneath both.
 
-BS/MSE Biomedical Engineering, Johns Hopkins University. Previously a trading strategies developer at Anti Capital (New York), building multi-exchange async execution systems in Rust.
-
-In parallel I maintain open-source Rust libraries for geometric computing and stochastic analysis (cartan, pathwise, volterra, elworthy), and collaborate with the University of Pittsburgh School of Medicine on applying mermin's topological-defect pipeline to human vaginal fibroblast microscopy.
+Founding Principal at [Holonomy Securities](https://holonomysecurities.com), a three-person team building systematic trading engines on a shared platform substrate. Previously a trading strategies developer at Anti Capital in New York. BS/MSE Biomedical Engineering, Johns Hopkins University.
 
 [![Website](https://img.shields.io/badge/sotofranco.dev-000?style=flat-square&logo=vercel&logoColor=white)](https://sotofranco.dev)
 
-## Open source
+## Formal methods and proof tooling
 
-| Repository | Language | What it does | CI |
-|---|---|---|---|
-| [`cartan`](https://github.com/alejandro-soto-franco/cartan) | Rust + Python | Riemannian geometry, Lie-group optimisation, and stochastic analysis on manifolds | [![CI](https://github.com/alejandro-soto-franco/cartan/actions/workflows/ci.yml/badge.svg)](https://github.com/alejandro-soto-franco/cartan/actions/workflows/ci.yml) |
-| [`volterra`](https://github.com/alejandro-soto-franco/volterra) | Rust + Python | Covariant active-nematics solver via discrete exterior calculus | [![CI](https://github.com/alejandro-soto-franco/volterra/actions/workflows/ci.yml/badge.svg)](https://github.com/alejandro-soto-franco/volterra/actions/workflows/ci.yml) |
-| [`pathwise`](https://github.com/alejandro-soto-franco/pathwise) | Rust + Python | Simulation and calibration of non-Markovian stochastic differential equations | [![CI](https://github.com/alejandro-soto-franco/pathwise/actions/workflows/ci.yml/badge.svg)](https://github.com/alejandro-soto-franco/pathwise/actions/workflows/ci.yml) |
-| [`elworthy`](https://github.com/alejandro-soto-franco/elworthy) | Rust + Python | JIT compiler specialising Bismut-Elworthy-Li Greeks into SIMD kernels | [![CI](https://github.com/alejandro-soto-franco/elworthy/actions/workflows/ci.yml/badge.svg)](https://github.com/alejandro-soto-franco/elworthy/actions/workflows/ci.yml) |
-| [`hurst`](https://github.com/alejandro-soto-franco/hurst) | Rust | Rough volatility on the correlation manifold; Hurst estimation on SPD(N) | [![CI](https://github.com/alejandro-soto-franco/hurst/actions/workflows/ci.yml/badge.svg)](https://github.com/alejandro-soto-franco/hurst/actions/workflows/ci.yml) |
-| [`vonkarman`](https://github.com/alejandro-soto-franco/vonkarman) | Rust | Pseudospectral DNS for the 3D incompressible Navier-Stokes equations | [![CI](https://github.com/alejandro-soto-franco/vonkarman/actions/workflows/ci.yml/badge.svg)](https://github.com/alejandro-soto-franco/vonkarman/actions/workflows/ci.yml) |
-| [`gpufft`](https://github.com/alejandro-soto-franco/gpufft) | Rust | Unified GPU FFT: VkFFT on Vulkan, cuFFT on CUDA | [![CI](https://github.com/alejandro-soto-franco/gpufft/actions/workflows/ci.yml/badge.svg)](https://github.com/alejandro-soto-franco/gpufft/actions/workflows/ci.yml) |
-| [`ferrum-gpu`](https://github.com/alejandro-soto-franco/ferrum-gpu) | Rust + Python | Pure-Rust GPU compute: Rust-to-PTX FFT kernels with Python bindings | [![CI](https://github.com/alejandro-soto-franco/ferrum-gpu/actions/workflows/ci.yml/badge.svg)](https://github.com/alejandro-soto-franco/ferrum-gpu/actions/workflows/ci.yml) |
-| [`spirv-oxide`](https://github.com/alejandro-soto-franco/spirv-oxide) | Rust | Rust-to-SPIR-V GPU compiler via Pliron MLIR | [![CI](https://github.com/alejandro-soto-franco/spirv-oxide/actions/workflows/ci.yml/badge.svg)](https://github.com/alejandro-soto-franco/spirv-oxide/actions/workflows/ci.yml) |
-| [`ermak`](https://github.com/alejandro-soto-franco/ermak) | Rust + Python | GPU Brownian dynamics for ligand dissociation kinetics | [![CI](https://github.com/alejandro-soto-franco/ermak/actions/workflows/ci.yml/badge.svg)](https://github.com/alejandro-soto-franco/ermak/actions/workflows/ci.yml) |
-| [`inferCNAsc`](https://github.com/alejandro-soto-franco/inferCNAsc) | Rust + Python | Copy-number alteration inference from single-cell RNA-seq | [![CI](https://github.com/alejandro-soto-franco/inferCNAsc/actions/workflows/ci.yml/badge.svg)](https://github.com/alejandro-soto-franco/inferCNAsc/actions/workflows/ci.yml) |
-| [`mermin`](https://github.com/alejandro-soto-franco/mermin) | Rust + Python | k-atic alignment analysis of fluorescence microscopy | [![CI](https://github.com/alejandro-soto-franco/mermin/actions/workflows/ci.yml/badge.svg)](https://github.com/alejandro-soto-franco/mermin/actions/workflows/ci.yml) |
-| [`tikhonov`](https://github.com/alejandro-soto-franco/tikhonov) | Rust | Pure-Rust Harmony2 for single-cell data integration | [![CI](https://github.com/alejandro-soto-franco/tikhonov/actions/workflows/ci.yml/badge.svg)](https://github.com/alejandro-soto-franco/tikhonov/actions/workflows/ci.yml) |
-| [`collint`](https://github.com/alejandro-soto-franco/collint) | Rust + Python | Detect and auto-fix visual collisions in matplotlib figures | [![CI](https://github.com/alejandro-soto-franco/collint/actions/workflows/ci.yml/badge.svg)](https://github.com/alejandro-soto-franco/collint/actions/workflows/ci.yml) |
-| [`kloeden`](https://github.com/alejandro-soto-franco/kloeden) | C++ + Rust | Hand-SIMD C++ versus Rust SDE-scheme benchmark companion | [![CI](https://github.com/alejandro-soto-franco/kloeden/actions/workflows/ci.yml/badge.svg)](https://github.com/alejandro-soto-franco/kloeden/actions/workflows/ci.yml) |
-| [`rotorlab`](https://github.com/alejandro-soto-franco/rotorlab) | Rust | Geometric-algebra maths-animation engine, rendered via Vulkan | [![CI](https://github.com/alejandro-soto-franco/rotorlab/actions/workflows/ci.yml/badge.svg)](https://github.com/alejandro-soto-franco/rotorlab/actions/workflows/ci.yml) |
-| [`vigild`](https://github.com/alejandro-soto-franco/vigild) | Rust | Multi-host Linux service-health daemon | [![CI](https://github.com/alejandro-soto-franco/vigild/actions/workflows/ci.yml/badge.svg)](https://github.com/alejandro-soto-franco/vigild/actions/workflows/ci.yml) |
-| [`navier-stokes`](https://github.com/alejandro-soto-franco/navier-stokes) | Python + Lean | 3D Navier-Stokes regularity: Lean, numerics, and theory | [![CI](https://github.com/alejandro-soto-franco/navier-stokes/actions/workflows/ci.yml/badge.svg)](https://github.com/alejandro-soto-franco/navier-stokes/actions/workflows/ci.yml) |
-| [`Meridian`](https://github.com/alejandro-soto-franco/Meridian) | Lean 4 | Metaprogramming toolkit: sorry inventory, proof search, dependency graphs | [![CI](https://github.com/alejandro-soto-franco/Meridian/actions/workflows/ci.yml/badge.svg)](https://github.com/alejandro-soto-franco/Meridian/actions/workflows/ci.yml) |
-| [`meridian-vscode`](https://github.com/alejandro-soto-franco/meridian-vscode) | TypeScript | VS Code companion: interactive dependency graph and Mathlib symbol index | [![CI](https://github.com/alejandro-soto-franco/meridian-vscode/actions/workflows/ci.yml/badge.svg)](https://github.com/alejandro-soto-franco/meridian-vscode/actions/workflows/ci.yml) |
+| Repository | Language | What it does |
+|---|---|---|
+| [`proofsense`](https://github.com/alejandro-soto-franco/proofsense) | Rust + Lean 4 | Proof-linting. Lean answers whether a proof typechecks; proofsense answers whether it matches the source it claims to formalise. The English rendering is a deterministic fold over the declaration's own type expression, so a model never writes the claim it judges. |
+| [`EllipticPDE`](https://github.com/alejandro-soto-franco/EllipticPDE) | Lean 4 | Second-order elliptic equations on Mathlib: existence and uniqueness, the Gårding inequality, the Fredholm alternative, spectral compactness, interior $H^2$ regularity. No `sorry`; axioms limited to the standard three. |
+| [`Meridian`](https://github.com/alejandro-soto-franco/Meridian) | Lean 4 | Metaprogramming toolkit: sorry inventory with Mathlib `DiscrTree` coverage, dependency graphs, gap reports, counterexample search, type-class diagnostics, IDA* proof search. |
+| [`meridian-vscode`](https://github.com/alejandro-soto-franco/meridian-vscode) | TypeScript | VS Code extension over Meridian. |
+| `3d-navier-stokes` (private) | Lean 4 | Chapter-scale formalisation of 3D Navier-Stokes regularity theory, on a three-track architecture with symbolic and numerical companions. |
 
-## Research and formalisation
+## Compilers and GPU
 
-Three-track architecture (Lean 4 + LaTeX + SymPy / Cadabra2) with chapter-level synchronisation between formal, narrative, and symbolic verification. The public Navier-Stokes track is in the table above; the items below are private or pre-release.
+| Repository | Language | What it does |
+|---|---|---|
+| [`spirv-oxide`](https://github.com/alejandro-soto-franco/spirv-oxide) | Rust | Rust to SPIR-V compiler through the Pliron MLIR framework. Cross-vendor sibling of the PTX path. |
+| [`cubecl-cuda-oxide`](https://github.com/alejandro-soto-franco/cubecl-cuda-oxide) | Rust | CubeCL backend compiling kernels to PTX through cuda-oxide. Pure-Rust GPU JIT, no nvrtc. |
+| [`ferrum-gpu`](https://github.com/alejandro-soto-franco/ferrum-gpu) | Rust + Python | Pure-Rust GPU compute substrate with Python bindings. |
+| [`gpufft`](https://github.com/alejandro-soto-franco/gpufft) | Rust | Unified GPU FFT: VkFFT on Vulkan, cuFFT on CUDA, one trait over both. |
+| [`elworthy`](https://github.com/alejandro-soto-franco/elworthy) | Rust + Python | JIT compiler. Symbolically differentiates SDE coefficients and lowers a Monte Carlo inner loop into a single Cranelift kernel, one path per SIMD lane. |
+| [`kloeden`](https://github.com/alejandro-soto-franco/kloeden) | C++ + Rust | Hand-written SIMD C++ against Rust on LLVM and Cranelift, over SDE schemes and Monte Carlo Greeks. |
 
-| Project | Language | Description |
-|---------|----------|-------------|
-| **elliptic-dirichlet** (private) | Lean 4 | Machine-verified existence and uniqueness of the weak $H_0^1$ solution of the Dirichlet problem for a uniformly elliptic, divergence-form operator, via Lax-Milgram. Joint formalisation with Kobe Marshall-Stevens. |
-| **mars-lnp** (private) | Rust | Defect-mediated hydrodynamic transfer of orientational order in coupled active-lyotropic nematic systems. Simulations on `volterra`, defect detection via `cartan` holonomy. |
+Upstream compiler work on [NVlabs/cuda-oxide](https://github.com/NVlabs/cuda-oxide) is listed below.
+
+## Stochastic analysis, geometry and simulation
+
+| Repository | Language | What it does |
+|---|---|---|
+| [`cartan`](https://github.com/alejandro-soto-franco/cartan) | Rust + Python | Riemannian geometry, Lie-group optimisation, and stochastic analysis on manifolds. |
+| [`pathwise`](https://github.com/alejandro-soto-franco/pathwise) | Rust + Python | Simulation and calibration of non-Markovian stochastic differential equations. |
+| [`hurst`](https://github.com/alejandro-soto-franco/hurst) | Rust | Rough volatility on the correlation manifold: fractional processes and Hurst estimation on SPD(N). |
+| [`volterra`](https://github.com/alejandro-soto-franco/volterra) | Rust + Python | Covariant active-nematics solver on simplicial meshes, through discrete exterior calculus. |
+| [`vonkarman`](https://github.com/alejandro-soto-franco/vonkarman) | Rust | Pseudospectral DNS for the 3D incompressible Navier-Stokes equations. |
+| [`ermak`](https://github.com/alejandro-soto-franco/ermak) | Rust + Python | GPU Brownian dynamics for ligand diffusion and dissociation kinetics in crowded environments. |
+| [`mermin`](https://github.com/alejandro-soto-franco/mermin) | Rust + Python | k-atic alignment and topological-defect analysis of fluorescence microscopy. |
+| [`inferCNAsc`](https://github.com/alejandro-soto-franco/inferCNAsc) | Rust + Python | Copy-number alteration inference from single-cell RNA-seq. |
+| [`tikhonov`](https://github.com/alejandro-soto-franco/tikhonov) | Rust | Pure-Rust Harmony2 for single-cell data integration. |
+
+## Systems and tooling
+
+| Repository | Language | What it does |
+|---|---|---|
+| [`lichtung`](https://github.com/alejandro-soto-franco/lichtung) | Rust | Actor library with first-class causal observability: lock-free vector-clock mailboxes, and a dual-mode executor giving record and deterministic replay. |
+| [`vigild`](https://github.com/alejandro-soto-franco/vigild) | Rust | Multi-host Linux service health daemon. |
+| [`cc-harness`](https://github.com/alejandro-soto-franco/cc-harness) | Rust | Multi-session agent launcher backed by tmux. |
+| [`collint`](https://github.com/alejandro-soto-franco/collint) | Rust + Python | Detects and auto-fixes visual collisions in matplotlib figures. |
+| [`rotorlab`](https://github.com/alejandro-soto-franco/rotorlab) | Rust | Maths-animation engine on a const-generic geometric-algebra core, rendered through raw Vulkan. |
 
 ## Upstream contributions
 
-| Date | Project | Description | Reference |
-|------|---------|-------------|-----------|
-| 14 Apr 2026 | [Mathlib4](https://github.com/leanprover-community/mathlib4) | `HasCompactMulSupport` closure under product operations: submonoid, List, Multiset, and Finset variants, with `@[to_additive]`. | [#38022](https://github.com/leanprover-community/mathlib4/pull/38022) · [`2ff8885`](https://github.com/leanprover-community/mathlib4/commit/2ff88851d5) |
-| 12 May 2026 | [cuda-oxide](https://github.com/NVlabs/cuda-oxide) | `fix(codegen)`: convert three silent miscompiles in the Rust-to-PTX code generator into hard build errors, including the invalid `.version` emitted for `compute_*` targets that `ptxas` rejects only at JIT time. | [#27](https://github.com/NVlabs/cuda-oxide/pull/27) · [`3697238`](https://github.com/NVlabs/cuda-oxide/commit/369723899a) |
+| Date | Project | Contribution | Reference |
+|---|---|---|---|
+| 14 Apr 2026 | [Mathlib4](https://github.com/leanprover-community/mathlib4) | `HasCompactMulSupport` closure under product operations: submonoid, `List`, `Multiset` and `Finset` variants, with `@[to_additive]`. | [#38022](https://github.com/leanprover-community/mathlib4/pull/38022) |
+| 12 May 2026 | [cuda-oxide](https://github.com/NVlabs/cuda-oxide) | Converted three silent miscompiles in the Rust-to-PTX code generator into hard build errors, each with a regression-test crate. | [#27](https://github.com/NVlabs/cuda-oxide/pull/27) |
+| 18 Jun 2026 | cuda-oxide | Fused-multiply-add contraction as the default, matching `nvcc --fmad=true`, with an `-O3` pass. | [#117](https://github.com/NVlabs/cuda-oxide/pull/117) |
+| 20 Jun 2026 | cuda-oxide | `cargo oxide emit-ltoir`, building a crate's LTOIR in one step, and a cached-backend rebuild fix. | [#256](https://github.com/NVlabs/cuda-oxide/pull/256) · [#257](https://github.com/NVlabs/cuda-oxide/pull/257) |
+| 30 Jun 2026 | cuda-oxide | `cuda-oxide-codegen`: extracted the dialect-MIR-to-PTX backend into a rustc-independent crate, so front ends other than the Rust path can drive the same pipeline. | [#314](https://github.com/NVlabs/cuda-oxide/pull/314) |
+| 10 Jul 2026 | [Daft](https://github.com/Eventual-Inc/Daft) | Lowered the release opt-level for `opendal-service-oss`. | [#7249](https://github.com/Eventual-Inc/Daft/pull/7249) |
+| 11 Jul 2026 | [txm](https://github.com/thatmagicalcat/txm) | Font-alphabet commands, inline symbols, single-token arguments and accents. | [#14](https://github.com/thatmagicalcat/txm/pull/14) |
+| 13 Jul 2026 | Daft | Dashboard build support for `OUT_DIR` on a filesystem other than the source tree's. | [#7246](https://github.com/Eventual-Inc/Daft/pull/7246) |
 
-## Quantitative Finance
+Five further cuda-oxide pull requests are open, among them a fourth silent miscompile ([#394](https://github.com/NVlabs/cuda-oxide/pull/394): aggregate constant fields read at the wrong layout offsets, with no diagnostic) and harness work on the differential fuzzer ([#395](https://github.com/NVlabs/cuda-oxide/pull/395)).
+
+## Quantitative finance
 
 Private repositories under [Holonomy Securities](https://holonomysecurities.com).
 
 | Project | Description |
-|---------|-------------|
-| [**Colosseum**](https://colosseum.holonomysecurities.com) | Multi-asset quantitative backtesting platform. WASM strategy sandbox, CLOB-native data, configurable fill models, full audit trail. Rust engine + axum API + Next.js frontend. |
-| **Polybius** | Binary options engine for prediction markets. Non-stationary SDE models, Kelly sizing, CLOB execution. Polymarket live, Kalshi planned. 16-crate workspace. |
-| **Malliavin** | Regime-conditional equity options engine. Directional spreads + vol selling on QQQ. Polygon + CBOE data, Deribit/IBKR venue integrations. |
-| **Bismut** | Volatility surface curvature signals. SSVI fitting, Riemannian curvature extraction, walk-forward backtesting with butterfly and straddle strategies. |
-| **Hsu** | Manifold-valued covariance research engine. Realised covariance matrices as points on SPD(N) with affine-invariant metrics, tangent-space MLE calibration. Built on `cartan` and `pathwise`. |
+|---|---|
+| [**Colosseum**](https://colosseum.holonomysecurities.com) | Multi-asset backtesting and execution platform. WASM strategy sandbox, CLOB-native data, configurable fill models, full audit trail. Rust engine, axum API, Next.js frontend. |
+| **Polybius** | Binary options engine for prediction markets. Non-stationary SDE models, Kelly sizing, CLOB execution. Live on Polymarket. |
+| **Malliavin** | Regime-conditional equity options engine. Directional spreads and volatility selling. |
+| **Bismut** | Volatility-surface curvature signals: SSVI fitting, Riemannian curvature extraction, walk-forward backtesting. |
+| **Hsu** | Manifold-valued covariance research. Realised covariance matrices as points on SPD(N) under affine-invariant metrics. |
 
-<p align="center">
-  <img src="https://github-readme-stats-kohl-nine-83.vercel.app/api/top-langs/?username=alejandro-soto-franco&layout=compact&theme=github_dark&hide_border=true&bg_color=00000000&langs_count=10&hide=html,jupyter%20notebook,mdx,tex,makefile,css,plpgsql&cache_seconds=1800&v=2" />
-</p>
+## Writing
+
+[Lecture notes and exercises](https://github.com/alejandro-soto-franco/jhu) for a Johns Hopkins BS/MSE curriculum (CC BY 4.0), [manuscripts](https://github.com/alejandro-soto-franco/manuscripts), and articles at [sotofranco.dev](https://sotofranco.dev).
