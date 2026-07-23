@@ -55,18 +55,23 @@ Upstream compiler work on [NVlabs/cuda-oxide](https://github.com/NVlabs/cuda-oxi
 
 ## Upstream contributions
 
+<!-- personal:contributions:begin id=table -->
 | Date | Project | Contribution | Reference |
 |---|---|---|---|
 | 14 Apr 2026 | [Mathlib4](https://github.com/leanprover-community/mathlib4) | `HasCompactMulSupport` closure under product operations: submonoid, `List`, `Multiset` and `Finset` variants, with `@[to_additive]`. | [#38022](https://github.com/leanprover-community/mathlib4/pull/38022) |
 | 12 May 2026 | [cuda-oxide](https://github.com/NVlabs/cuda-oxide) | Converted three silent miscompiles in the Rust-to-PTX code generator into hard build errors, each with a regression-test crate. | [#27](https://github.com/NVlabs/cuda-oxide/pull/27) |
 | 18 Jun 2026 | cuda-oxide | Fused-multiply-add contraction as the default, matching `nvcc --fmad=true`, with an `-O3` pass. | [#117](https://github.com/NVlabs/cuda-oxide/pull/117) |
-| 20 Jun 2026 | cuda-oxide | `cargo oxide emit-ltoir`, building a crate's LTOIR in one step, and a cached-backend rebuild fix. | [#256](https://github.com/NVlabs/cuda-oxide/pull/256) · [#257](https://github.com/NVlabs/cuda-oxide/pull/257) |
-| 30 Jun 2026 | cuda-oxide | `cuda-oxide-codegen`: extracted the dialect-MIR-to-PTX backend into a rustc-independent crate, so front ends other than the Rust path can drive the same pipeline. | [#314](https://github.com/NVlabs/cuda-oxide/pull/314) |
-| 10 Jul 2026 | [Daft](https://github.com/Eventual-Inc/Daft) | Lowered the release opt-level for `opendal-service-oss`. | [#7249](https://github.com/Eventual-Inc/Daft/pull/7249) |
-| 11 Jul 2026 | [txm](https://github.com/thatmagicalcat/txm) | Font-alphabet commands, inline symbols, single-token arguments and accents. | [#14](https://github.com/thatmagicalcat/txm/pull/14) |
-| 13 Jul 2026 | Daft | Dashboard build support for `OUT_DIR` on a filesystem other than the source tree's. | [#7246](https://github.com/Eventual-Inc/Daft/pull/7246) |
+| 20 Jun 2026 | cuda-oxide | `cargo oxide emit-ltoir`, building a crate's LTOIR in one step, which enables LTO across the Rust and CUDA C boundary. | [#256](https://github.com/NVlabs/cuda-oxide/pull/256) |
+| 20 Jun 2026 | cuda-oxide | Rebuild the cached backend when its source advances, eliminating stale compiled artefacts after an upstream update. | [#257](https://github.com/NVlabs/cuda-oxide/pull/257) |
+| 4 Jul 2026 | cuda-oxide | `cuda-oxide-codegen`: extracted the dialect-MIR-to-PTX backend into a rustc-independent crate, so front ends other than the Rust path can drive the same pipeline. | [#314](https://github.com/NVlabs/cuda-oxide/pull/314) |
+| 10 Jul 2026 | [Daft](https://github.com/Eventual-Inc/Daft) | Lowered the release `opt-level` for `opendal-service-oss`, sidestepping an LLVM SLP-vectoriser stall that hung the build for tens of minutes. | [#7249](https://github.com/Eventual-Inc/Daft/pull/7249) |
+| 11 Jul 2026 | [txm](https://github.com/thatmagicalcat/txm) | Font-alphabet commands, inline symbols, single-token macro arguments and accents, which together carry geometric-algebra and quaternion notation in a terminal. | [#14](https://github.com/thatmagicalcat/txm/pull/14) |
+| 13 Jul 2026 | Daft | Dashboard build support for `OUT_DIR` on a filesystem other than the source tree's, falling back to copy-then-remove when `rename(2)` returns `EXDEV`. | [#7246](https://github.com/Eventual-Inc/Daft/pull/7246) |
+| 22 Jul 2026 | cuda-oxide | Ran fuzzer seeds whose device code calls libdevice, loading through `kernels::load` so cubin, PTX, NVVM IR and LTOIR each dispatch to the right loader. | [#395](https://github.com/NVlabs/cuda-oxide/pull/395) |
+| 22 Jul 2026 | cuda-oxide | Tightened the standalone compiler's clone, liveness and diagnostic paths: an erase guard on the panic path, an opt-in module clone, and toolchain selection recorded for the caller. | [#415](https://github.com/NVlabs/cuda-oxide/pull/415) |
 
-Five further cuda-oxide pull requests are open, among them a fourth silent miscompile ([#394](https://github.com/NVlabs/cuda-oxide/pull/394): aggregate constant fields read at the wrong layout offsets, with no diagnostic) and harness work on the differential fuzzer ([#395](https://github.com/NVlabs/cuda-oxide/pull/395)).
+Five further cuda-oxide pull requests are open, among them [#394](https://github.com/NVlabs/cuda-oxide/pull/394): a fourth silent miscompile: aggregate constant fields read at the wrong layout offsets, with no diagnostic.
+<!-- personal:contributions:end id=table -->
 
 ## Quantitative finance
 
