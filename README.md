@@ -69,8 +69,17 @@ Upstream compiler work on [NVlabs/cuda-oxide](https://github.com/NVlabs/cuda-oxi
 | 13 Jul 2026 | Daft | Dashboard build support for `OUT_DIR` on a filesystem other than the source tree's, falling back to copy-then-remove when `rename(2)` returns `EXDEV`. | [#7246](https://github.com/Eventual-Inc/Daft/pull/7246) |
 | 22 Jul 2026 | cuda-oxide | Ran fuzzer seeds whose device code calls libdevice, loading through `kernels::load` so cubin, PTX, NVVM IR and LTOIR each dispatch to the right loader. | [#395](https://github.com/NVlabs/cuda-oxide/pull/395) |
 | 22 Jul 2026 | cuda-oxide | Tightened the standalone compiler's clone, liveness and diagnostic paths: an erase guard on the panic path, an opt-in module clone, and toolchain selection recorded for the caller. | [#415](https://github.com/NVlabs/cuda-oxide/pull/415) |
-
-Five further cuda-oxide pull requests are open, among them [#394](https://github.com/NVlabs/cuda-oxide/pull/394): a fourth silent miscompile: aggregate constant fields read at the wrong layout offsets, with no diagnostic.
+| 23 Jul 2026 | cuda-oxide | A fourth silent miscompile: aggregate constant fields read at the wrong layout offsets, with no diagnostic. | [#394](https://github.com/NVlabs/cuda-oxide/pull/394) |
+| 24 Jul 2026 | cuda-oxide | Target selection attributed to whoever chose the target. | [#416](https://github.com/NVlabs/cuda-oxide/pull/416) |
+| 24 Jul 2026 | cuda-oxide | The standalone compiler's scratch directory backed by `tempfile`. | [#417](https://github.com/NVlabs/cuda-oxide/pull/417) |
+| 24 Jul 2026 | cuda-oxide | Publish the backend to the shared cache on setup. | [#445](https://github.com/NVlabs/cuda-oxide/pull/445) |
+| 24 Jul 2026 | cuda-oxide | Report the shared cache in `doctor`. | [#447](https://github.com/NVlabs/cuda-oxide/pull/447) |
+| 27 Jul 2026 | cuda-oxide | `SwitchInt` arms compared at the discriminant width, so a match on a 128-bit scrutinee compiles. Found by the differential fuzzer: a `u64::try_from` clamp on the arm values refused a case the 64-bit enum carrier limit never covered. | [#482](https://github.com/NVlabs/cuda-oxide/pull/482) |
+| 27 Jul 2026 | cuda-oxide | NVVM IR target rejections reported at the input stage, closing a follow-up the maintainer left on #416: the resolver had labelled target-attributable rejections as export-stage failures. | [#483](https://github.com/NVlabs/cuda-oxide/pull/483) |
+| 27 Jul 2026 | cuda-oxide | Fuzzer traces widened to `f32` and `f64`, folded as raw bits with no ULP tolerance, which keeps the trace comparison bit-for-bit. Runs under `--no-fmad`, since contraction is on by default and GPU `fma.rn` would otherwise diverge from the CPU oracle's separate roundings. | [#484](https://github.com/NVlabs/cuda-oxide/pull/484) |
+| 27 Jul 2026 | cuda-oxide | Workspace test targets linted in CI. The workspace clippy step was the only one of three missing `--all-targets`, which is why an `unnecessary_mut_passed` inside a `#[cfg(test)]` module had stayed invisible. | [#486](https://github.com/NVlabs/cuda-oxide/pull/486) |
+| 28 Jul 2026 | cuda-oxide | An exact launch-contract block shape carried into the compiled artifact as `.reqntid`, so the CUDA driver enforces it per axis at every launch, including raw `_unchecked` ones that bypass preparation. | [#514](https://github.com/NVlabs/cuda-oxide/pull/514) |
+| 31 Jul 2026 | cuda-oxide | Opt-in libdevice linking for the standalone PTX API, closing #485. A frontend driving `cuda_oxide_codegen::experimental` stopped at the first `sqrt`, since float intrinsics lower to libdevice `__nv_*` calls and v1 rejected every unresolved external symbol, at a site sitting directly above the IR-level libdevice link that would have resolved them. `Linking::SelfContained` stays the default and changes no compilation that succeeds today. | [#596](https://github.com/NVlabs/cuda-oxide/pull/596) |
 <!-- personal:contributions:end id=table -->
 
 ## Quantitative finance
