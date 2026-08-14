@@ -8,6 +8,9 @@ Founding Principal at [Holonomy Securities](https://holonomysecurities.com), a t
 
 ## Formal methods and proof tooling
 
+<details>
+<summary>5 repositories</summary>
+
 | Repository | Language | What it does |
 |---|---|---|
 | [`proofsense`](https://github.com/alejandro-soto-franco/proofsense) | Rust + Lean 4 | Proof-linting. Lean answers whether a proof typechecks; proofsense answers whether it matches the source it claims to formalise. The English rendering is a deterministic fold over the declaration's own type expression, so a model never writes the claim it judges. |
@@ -16,7 +19,12 @@ Founding Principal at [Holonomy Securities](https://holonomysecurities.com), a t
 | [`meridian-vscode`](https://github.com/alejandro-soto-franco/meridian-vscode) | TypeScript | VS Code extension over Meridian. |
 | `3d-navier-stokes` (private) | Lean 4 | Chapter-scale formalisation of 3D Navier-Stokes regularity theory, on a three-track architecture with symbolic and numerical companions. |
 
+</details>
+
 ## Compilers and GPU
+
+<details>
+<summary>6 repositories</summary>
 
 | Repository | Language | What it does |
 |---|---|---|
@@ -27,9 +35,14 @@ Founding Principal at [Holonomy Securities](https://holonomysecurities.com), a t
 | [`elworthy`](https://github.com/alejandro-soto-franco/elworthy) | Rust + Python | JIT compiler. Symbolically differentiates SDE coefficients and lowers a Monte Carlo inner loop into a single Cranelift kernel, one path per SIMD lane. |
 | [`kloeden`](https://github.com/alejandro-soto-franco/kloeden) | C++ + Rust | Hand-written SIMD C++ against Rust on LLVM and Cranelift, over SDE schemes and Monte Carlo Greeks. |
 
+</details>
+
 Upstream compiler work on [NVlabs/cuda-oxide](https://github.com/NVlabs/cuda-oxide) is listed below.
 
 ## Stochastic analysis, geometry and simulation
+
+<details>
+<summary>9 repositories</summary>
 
 | Repository | Language | What it does |
 |---|---|---|
@@ -43,7 +56,12 @@ Upstream compiler work on [NVlabs/cuda-oxide](https://github.com/NVlabs/cuda-oxi
 | [`inferCNAsc`](https://github.com/alejandro-soto-franco/inferCNAsc) | Rust + Python | Copy-number alteration inference from single-cell RNA-seq. |
 | [`tikhonov`](https://github.com/alejandro-soto-franco/tikhonov) | Rust | Pure-Rust Harmony2 for single-cell data integration. |
 
+</details>
+
 ## Systems and tooling
+
+<details>
+<summary>5 repositories</summary>
 
 | Repository | Language | What it does |
 |---|---|---|
@@ -53,7 +71,12 @@ Upstream compiler work on [NVlabs/cuda-oxide](https://github.com/NVlabs/cuda-oxi
 | [`collint`](https://github.com/alejandro-soto-franco/collint) | Rust + Python | Detects and auto-fixes visual collisions in matplotlib figures. |
 | [`rotorlab`](https://github.com/alejandro-soto-franco/rotorlab) | Rust | Maths-animation engine on a const-generic geometric-algebra core, rendered through raw Vulkan. |
 
+</details>
+
 ## Upstream contributions
+
+<details>
+<summary>Merged pull requests and merge requests, by date</summary>
 
 <!-- personal:contributions:begin id=table -->
 | Date | Project | Contribution | Reference |
@@ -116,9 +139,14 @@ Upstream compiler work on [NVlabs/cuda-oxide](https://github.com/NVlabs/cuda-oxi
 Eight further alakazam.jl merge requests are open. Three further infinity-cosmos pull requests are open. One further cadabra2 pull request is open.
 <!-- personal:contributions:end id=table -->
 
+</details>
+
 ## Quantitative finance
 
 Private repositories under [Holonomy Securities](https://holonomysecurities.com).
+
+<details>
+<summary>5 projects</summary>
 
 | Project | Description |
 |---|---|
@@ -127,6 +155,8 @@ Private repositories under [Holonomy Securities](https://holonomysecurities.com)
 | **Malliavin** | Regime-conditional equity options engine. Directional spreads and volatility selling. |
 | **Bismut** | Volatility-surface curvature signals: SSVI fitting, Riemannian curvature extraction, walk-forward backtesting. |
 | **Hsu** | Manifold-valued covariance research. Realised covariance matrices as points on SPD(N) under affine-invariant metrics. |
+
+</details>
 
 ## Writing
 
