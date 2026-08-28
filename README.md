@@ -2,7 +2,7 @@
 
 I implement mathematics. Differential geometry, stochastic analysis and PDE theory, as Rust libraries you can run, Lean developments you can check, and the GPU compilers underneath both.
 
-Founding Principal at [Holonomy Securities](https://holonomysecurities.com), a three-person team building systematic trading engines on a shared platform substrate. Previously a trading strategies developer at Anti Capital in New York. BS/MSE Biomedical Engineering, Johns Hopkins University.
+Founding Principal at [Holonomy Securities](https://holonomysecurities.com), a three-person team building systematic trading engines on a shared platform substrate. Open to long-term contracts in software engineering, GPU compilers, and mathematical formalisation. Previously a trading strategies developer at Anti Capital in New York. BS/MSE Biomedical Engineering, Johns Hopkins University.
 
 [![Website](https://img.shields.io/badge/sotofranco.dev-000?style=flat-square&logo=vercel&logoColor=white)](https://sotofranco.dev)
 
