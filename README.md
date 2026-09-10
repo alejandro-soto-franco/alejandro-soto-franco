@@ -164,4 +164,4 @@ Private repositories under [Holonomy Securities](https://holonomysecurities.com)
 
 ## Publications
 
-[Chaos-generating periodic orbits of topological defects in confined active nematics]([https://github.com/alejandro-soto-franco/jhu](https://www.pnas.org/doi/10.1073/pnas.2516670123)), PNAS 2026.
+[Chaos-generating periodic orbits of topological defects in confined active nematics](https://www.pnas.org/doi/10.1073/pnas.2516670123), PNAS 2026.
