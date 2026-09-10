@@ -162,6 +162,6 @@ Private repositories under [Holonomy Securities](https://holonomysecurities.com)
 
 </details>
 
-## Writing
+## Publications
 
-[Lecture notes and exercises](https://github.com/alejandro-soto-franco/jhu) for a Johns Hopkins BS/MSE curriculum (CC BY 4.0), [manuscripts](https://github.com/alejandro-soto-franco/manuscripts), and articles at [sotofranco.dev](https://sotofranco.dev).
+[Chaos-generating periodic orbits of topological defects in confined active nematics]([https://github.com/alejandro-soto-franco/jhu](https://www.pnas.org/doi/10.1073/pnas.2516670123)), PNAS 2026.
